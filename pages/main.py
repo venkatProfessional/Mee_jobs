@@ -1,5 +1,4 @@
-from pages.add_user import Adduser
-from pages.dashboard_page import DashboardPage
+from pages.add_user import AddUser
 
 if __name__ == "__main__":
     # login test
@@ -7,7 +6,8 @@ if __name__ == "__main__":
     # page.verify_dashboard()
 
     # add user functionality
-    adduser = Adduser()
-    adduser.AutomateAdduser()
+    adduser = AddUser()
+    adduser.automate_add_user_page_navigation()
+    adduser.export_from_excel_and_add_users()
 
 
